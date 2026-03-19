@@ -2,13 +2,33 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Hustler's High Horse</title>
+    <title>High Horse of Hustle</title>
 </head>
 
 <body>
+    <div class="main-screen" id="title">
+        <h1>HIGH HORSE OF HUSTLE</h1>
+        <button class="start-btn" onclick="startGame()">
+            START LIFE
+        </button>
+    </div>
 
+    <div class="main-screen hidden" id="startGame">
+        <h2>Game Started</h2>
+
+        <div class="progress-container">
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <button class="action-btn" onclick="incrementProgress()">Do Work</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
