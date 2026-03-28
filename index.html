@@ -15,19 +15,32 @@
             START LIFE
         </button>
     </div>
+    <div id="vignette"></div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Smooch+Sans:wght@100..900&display=swap"
+        rel="stylesheet">
 
     <div class="main-screen hidden" id="startGame">
-        <h2>Game Started</h2>
+        <h2></h2>
 
         <div class="progress-container">
 
+            <div class="progress-label" id="progressLabel"></div>
             <div class="progress-bar">
+
                 <div class="progress-fill" id="progressFill"></div>
             </div>
             <button class="action-btn" onclick="incrementProgress()">Do Work</button>
         </div>
     </div>
 
+    <div class="interruption-overlay hidden" id="interruptionOverlay" aria-live="polite">
+        <div class="interruption-box">
+            <p>An unexpected payment has arrived!</p>
+            <button class="interruption-close" id="interruptionCloseBtn">Continue</button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 
